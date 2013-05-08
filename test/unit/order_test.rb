@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class OrderTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   describe "sandwich order" do
+   	it "submits the sandwich choice" do
+   		sandwich.value == true
+   	end
+   end
 end

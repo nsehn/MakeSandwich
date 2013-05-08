@@ -18,9 +18,14 @@
 
   <div class="field">
     <%= f.label :sandwich %><br />
-    <%= f.select :sandwich, [:meat, :vegetarian, :vegan] %>
+    <%= f.select :sandwich, [:Meat, :Vegetarian, :Vegan] %>
     </div>
   
+  <div class="field">
+    <%= f.label :special_instructions %><br />
+    <%= f.text_area :special_instructions %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
