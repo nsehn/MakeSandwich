@@ -1,9 +1,9 @@
 MakeSandwich::Application.routes.draw do
 
   resources :orders
-  get '/orders' => "order#new", :as => "new_order"
-  get '/orders/:id' => "order#show"
-  post '/order' => 'order#create', :as => 'order'
+  # get '/order' => "order#new", :as => "new_order"
+  # get '/order/:id' => "order#show"
+  # post '/order' => 'order#create', :as => 'order'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -53,7 +53,7 @@ MakeSandwich::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'order#new'
+   root :to => 'orders#new'
 
   # See how all your routes lay out with "rake routes"
 
