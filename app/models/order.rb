@@ -6,11 +6,5 @@ class Order < ActiveRecord::Base
   validates_inclusion_of :sandwich, :in => ["meat", "vegetarian", "vegan"]
 
 
-  # def sandwich
-  #   read_attribute(:sandwich).to_sym
-  # end
-  # def sandwhich= (value)
-  #   write_attribute(:sandwich, value.to_s)
-  # end
 
 end

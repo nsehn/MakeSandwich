@@ -1,11 +1,7 @@
 class OrdersController < ApplicationController
 
 def index
-	# @orders = Order.all
-	# respond_to do |format|
- #      format.html # index.html.erb
- #      format.json { render json: @orders }
- #    end
+	
 end
 
 def new
@@ -22,6 +18,7 @@ def create
 	@order = Order.new(params[:order])
 	 respond_to do |format|
     if @order.save
+    UserMailer.sandwich_order(@order).deliver
       format.html { redirect_to(@order, :notice => 'Order has been saved!') }
       format.xml  { render :xml => @order, :status => :created, :location => @order }
     else
@@ -29,11 +26,7 @@ def create
       format.xml  { render :xml => @order.errors, :status => :unprocessable_entity }
     end
   end
-    # if @order.save
-    # redirect_to orders_path(@order)             
-    # else
-   	# render :action => :new 
-    # end
+
 end
 
 
