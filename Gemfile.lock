@@ -51,6 +51,9 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    figaro (0.6.4)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     hike (1.2.2)
     i18n (0.6.1)
     journey (1.0.4)
@@ -65,6 +68,7 @@ GEM
     mime-types (1.23)
     multi_json (1.7.3)
     mysql2 (0.3.11)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -126,9 +130,11 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   debugger
   enumerize
+  figaro
   jquery-rails
   mail
   mysql2
+  pg
   rails (= 3.2.13)
   rspec
   sass-rails (~> 3.2.3)
