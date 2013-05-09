@@ -9,6 +9,7 @@ MakeSandwich::Application.configure do
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: ENV["GMAIL_USERNAME"],
+  password: ENV["GMAIL_PW"]
   }
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
