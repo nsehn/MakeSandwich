@@ -25,11 +25,12 @@ group :assets do
 end
 
 
-group :production do
-	gem 'pg'
-end
+# group :production do
+# 	gem 'pg'
+# end
 gem 'figaro'
 gem 'jquery-rails'
+gem 'postgres-pr'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

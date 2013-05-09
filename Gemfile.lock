@@ -68,8 +68,8 @@ GEM
     mime-types (1.23)
     multi_json (1.7.3)
     mysql2 (0.3.11)
-    pg (0.15.1)
     polyglot (0.3.3)
+    postgres-pr (0.6.3)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -134,7 +134,7 @@ DEPENDENCIES
   jquery-rails
   mail
   mysql2
-  pg
+  postgres-pr
   rails (= 3.2.13)
   rspec
   sass-rails (~> 3.2.3)
