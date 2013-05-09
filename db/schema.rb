@@ -15,8 +15,10 @@ ActiveRecord::Schema.define(:version => 20130508040602) do
 
   create_table "orders", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.string   "sandwich",             :limit => 10
+    t.text     "special_instructions"
   end
 
 end
