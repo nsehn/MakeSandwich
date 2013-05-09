@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 gem 'mysql2'
 gem 'enumerize'
 gem 'debugger'
+gem 'rspec'
 
 
 # Gems used only for assets and not required
