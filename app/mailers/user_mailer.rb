@@ -1,11 +1,11 @@
 class UserMailer < ActionMailer::Base
-  default from: "order_notification@sandwich.com"
+  default from: "nishasehn@gmail.com"
 
 
   def sandwich_order(order)
   	@order = order
-  	mail(:to => 'nishasehn@gmail.com', :subject => "Sandwich order") #want to add person's name
+  	mail(:to => 'Deyton.Sehn@docusign.com', :subject => "Sandwich order") #want to add person's name
 
   end
-  
+
 end

@@ -9,6 +9,7 @@ gem 'mysql2'
 gem 'enumerize'
 gem 'debugger'
 gem 'rspec'
+gem 'mail'
 
 
 # Gems used only for assets and not required

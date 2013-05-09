@@ -4,15 +4,17 @@ require File.expand_path('../application', __FILE__)
 # Initialize the rails application
 MakeSandwich::Application.initialize!
 
-ActionMailer::Base.delivery_method = :sendmail
+ActionMailer::Base.delivery_method = :smtp
 
-MakeSandwich::Application.configure do
-config.action_mailer.smtp_settings = {
-  enable_starttls_auto: true,
-  address: 'smtp.gmail.com',
+ActionMailer::Base.smtp_settings ={
+address: "smtp.gmail.com",
   port: 587,
-  authentication: 'plain',
-  user_name: 'myemail@gmail.com',
-  password: '<password>'
+  #domain: "example.com",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: ENV["GMAIL_USERNAME"],
+  password: ENV["GMAIL_PW"]
 }
-end
+
+  
+  
