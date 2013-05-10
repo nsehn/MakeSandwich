@@ -11,7 +11,36 @@
     </div>
   <% end %>
 
+  <form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputName">Name</label>
+    <div class="controls">
+      <input type="text" id="inputEmail" placeholder="Who are you?">
+    </div>
+  </div>
+
   <div class="field">
+    <%= f.label :sandwich %><br />
+    <%= f.select :sandwich, [:Meat, :Vegetarian, :Vegan] %>
+    </div>
+    
+  <div class="control-group">  
+    <label class="control-label" for="textarea">Special Instructions</label>  
+    <div class="controls">  
+    <textarea class="input-xlarge" id="textarea" rows="3"></textarea>  
+    </div>  
+  </div>  
+
+  <div class="control-group">
+    <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Order!</button>
+    <button type="button" class="btn">Cancel</button>
+    </div>
+  </div>
+
+</form>
+
+  <!-- <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
@@ -28,5 +57,5 @@
 
   <div class="actions">
     <%= f.submit %>
-  </div>
+  </div> -->
 <% end %>
