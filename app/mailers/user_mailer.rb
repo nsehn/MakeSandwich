@@ -4,7 +4,7 @@ class UserMailer < ActionMailer::Base
 
   def sandwich_order(order)
   	@order = order
-  	mail(:to => 'Deyton.Sehn@docusign.com', :subject => "Sandwich order") #want to add person's name
+  	mail(:to => 'make_sandwich@generalthings.com', :subject => "Sandwich order") #want to add person's name
 
   end
 
