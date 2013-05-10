@@ -1,9 +1,10 @@
 MakeSandwich::Application.routes.draw do
 
   resources :orders
-  match "/404", :to => "errors#not_found"
-  match '/422', :to => 'errors#server_error'
-  match '/500', :to => 'errors#server_error'
+  match '/404' => 'error#not_found'
+  match '/422' => 'error#server_error'
+  match '/500' => 'error#server_error'
+  match '*path' => redirect('/')
   # get '/order' => "order#new", :as => "new_order"
   # get '/order/:id' => "order#show"
   # post '/order' => 'order#create', :as => 'order'
