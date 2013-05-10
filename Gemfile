@@ -25,9 +25,9 @@ group :assets do
 end
 
 
-# group :production do
-# 	gem 'pg'
-# end
+group :production do
+	gem 'pg'
+end
 gem 'figaro'
 gem 'jquery-rails'
 gem 'postgres-pr'
