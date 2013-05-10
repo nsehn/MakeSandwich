@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+
   <form class="form-horizontal">
   <div class="control-group">
     <label class="control-label" for="inputName">Name</label>
@@ -23,7 +24,7 @@
     <%= f.label :sandwich %><br />
     <%= f.select :sandwich, [:Meat, :Vegetarian, :Vegan] %>
     </div>
-    
+
   <div class="control-group">  
     <label class="control-label" for="textarea">Special Instructions</label>  
     <div class="controls">  
@@ -33,29 +34,11 @@
 
   <div class="control-group">
     <div class="form-actions">
-    <button type="submit" class="btn btn-primary">Order!</button>
+    <button class="btn btn-primary" type="submit">Order!</button>
     <button type="button" class="btn">Cancel</button>
     </div>
   </div>
 
 </form>
 
-  <!-- <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :sandwich %><br />
-    <%= f.select :sandwich, [:Meat, :Vegetarian, :Vegan] %>
-    </div>
-  
-  <div class="field">
-    <%= f.label :special_instructions %><br />
-    <%= f.text_area :special_instructions %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div> -->
 <% end %>
